@@ -3,14 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-boost": "^0.4.4",
+    "classnames": "^2.2.6",
+    "formik": "^1.0.1",
+    "graphql": "^14.5.8",
     "react": "^16.12.0",
+    "react-apollo": "^2.2.2",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "redux": "^3.4.0",
+    "redux-observable": "^0.18.0",
+    "rxjs": "^5.5.8",
+    "typestyle": "^2.0.4",
+    "yup": "^0.26.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "./node_modules/.bin/mocha ./src/**/*.test.js --require ./src/test/index.js --compilers js:@babel/register",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +39,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/register": "^7.7.0",
+    "@testing-library/react-hooks": "^3.2.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "babel-root-slash-import": "^1.1.0",
+    "chai": "^4.1.2",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "mocha": "^5.2.0",
+    "sinon": "^4.3.0",
+    "sinon-chai": "^3.2.0",
+    "sinon-stub-promise": "^4.0.0"
   }
 }
